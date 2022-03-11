@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Rate Calculator</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <img class="money-img" src="/images/money.png">
+  <h1>Exchange Rate Calculator</h1>
+  <h1>Custom Api - <i><a href="https://github.com/WillHernandez/currencyApi" target="_blank">currencyApi</a></i> </h1>
+  
+
+  <div class="container">
+    <div class="currency">
+      <select id="currency-one">
+        <option value="USD" selected>USD</option>
+        <option value="EUR">EUR</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="MXN">MXN</option>
+        <option value="RUB">RUB</option>
+      </select>
+      <input type="number" id="amount-one" value="1">
+    </div>
+
+    <div class="rate-swap">
+      <button class="btn" id="btn">Swap</button>
+      <div class="rate" id="rate"></div>
+    </div>
+
+    <div class="currency">
+      <select id="currency-two">
+        <option value="EUR" selected>EUR</option>
+        <option value="USD">USD</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="MXN">MXN</option>
+        <option value="RUB">RUB</option>
+      </select>
+      <input type="number" id="amount-two" value="0"> <!-- value will be added in dynamically -->
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

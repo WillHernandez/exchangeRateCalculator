@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+
+:root {
+  --primary-color: #5fbaa7;
+  --secondary-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Volkhov', serif;
+  margin: 0;
+  padding: 20;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  font-size: 12px;
+  background-color: var(--primary-color);
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.money-img { /* shrinking image to a useable size */
+  width: 150px;
+  background: transparent;
+}
+
+.currency {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency select {
+  background-color: var(--secondary-color);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+}
+
+.rate {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+select:focus, input:focus, button:focus {
+  outline: 0;
+}
+
+/* the width of the input box is what is currently taking up the largest amount of width on the page so shrinking its width will bring other items closer together. */
+@media(max-width: 600px){
+  .currency input {
+    width: 200px;
+  }
+}
