@@ -2,4 +2,4 @@
 Front end created using HTML, CSS & Vanilla JS.
 API created using Python Django rest framework.
 
-[https://determined-mcnulty-72601a.netlify.app/]()
+[Link to website](https://determined-mcnulty-72601a.netlify.app/)
