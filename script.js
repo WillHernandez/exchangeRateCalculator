@@ -10,7 +10,7 @@ const calculate = async () => {
 		const optToId = {'USD': 1,'EUR': 2,'AUD': 3,'CAD': 4,'MXN': 5,'RUB': 6}
 		try {
 			const optToApiId = optToId[selectOne.value];
-			const url = `http://127.0.0.1:8000/currencies/${optToApiId}`
+			const url = `https://currency-api-will-h.herokuapp.com/currencies/${optToApiId}`
 			const res = await fetch(url);
 			const data = await res.json();
 			let secondRate = data[selectTwo.value];
