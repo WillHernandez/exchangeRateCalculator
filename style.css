@@ -10,7 +10,8 @@
 }
 
 body {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
+  background-color: (--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +27,10 @@ h1 {
   color: var(--primary-color);
 }
 
+h4 {
+  margin: 0;
+}
+
 p {
   text-align: center;
 }
@@ -33,6 +38,7 @@ p {
 .btn {
   color: #fff;
   font-size: 12px;
+  font-weight: bold;
   background-color: var(--primary-color);
   padding: 5px 12px;
   border-radius: 5px;
